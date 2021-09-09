@@ -1,3 +1,6 @@
+#pragma once
+#include "musical_notes.h"
+
 #define MARIO_MUSHROOM \
     S__NOTE(_C5 ), \
     S__NOTE(_G4 ), \
