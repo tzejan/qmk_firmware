@@ -2,7 +2,7 @@
 
 #ifdef AUDIO_ENABLE
     #define STARTUP_SONG SONG(MARIO_MUSHROOM)
-   // #define STARTUP_SONG SONG(PLANCK_SOUND)
+//    #define STARTUP_SONG SONG(PLANCK_SOUND)
     // #define STARTUP_SONG SONG(NO_SOUND)
 
     #define DEFAULT_LAYER_SONGS { SONG(QWERTY_SOUND), \
@@ -10,6 +10,9 @@
                                   SONG(DVORAK_SOUND) \
                                 }
 #endif
+
+// Enables delay during startup song to accomodate for USB startup issues
+#define AUDIO_INIT_DELAY
 
 /*
  * MIDI options
@@ -46,3 +49,6 @@
 
 // Apply the modifier on keys that are tapped during a short hold of a modtap
 #define PERMISSIVE_HOLD
+
+// Sets the maximum power (in mA) over USB for the device
+#define USB_MAX_POWER_CONSUMPTION 100
