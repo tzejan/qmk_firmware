@@ -52,3 +52,9 @@
 
 // Sets the maximum power (in mA) over USB for the device
 #define USB_MAX_POWER_CONSUMPTION 100
+
+// Enable lighting layers
+#define RGBLIGHT_LAYERS
+
+// RGB light effect
+#define RGBLIGHT_EFFECT_BREATHING
