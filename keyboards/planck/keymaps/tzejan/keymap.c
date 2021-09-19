@@ -329,7 +329,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
         #endif
         break;
     default: //  for any other layers, or the default layer
-        rgblight_mode (RGBLIGHT_MODE_BREATHING);
+        rgblight_mode (RGBLIGHT_MODE_RAINBOW_SWIRL);
         break;
   }
   return state;
